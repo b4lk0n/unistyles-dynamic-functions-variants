@@ -2,6 +2,7 @@
   "expo": {
     "name": "unistyles-dynamic-functions-variants",
     "slug": "unistyles-dynamic-functions-variants",
+    "scheme": "unistyles-dynamic-functions-variants",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +16,21 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.b4lk0n.unistyles-dynamic-functions-variants"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.b4lk0n.unistyles_dynamic_functions_variants"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
