@@ -30,10 +30,10 @@ const stylesheet = createStyleSheet((theme) => ({
       },
       color: {
         neutral: {
-          color: '#000000',
+          color: theme.colors.neutral,
         },
         primary: {
-          color: '#3c244c',
+          color: theme.colors.primary,
         },
       },
     },
