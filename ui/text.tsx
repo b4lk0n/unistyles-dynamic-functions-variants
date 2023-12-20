@@ -12,11 +12,11 @@ export function Text({ variant = 'body', color = 'neutral', ...props }: TextProp
     color,
   })
 
-  return <NativeText {...props} style={styles.root} />
+  return <NativeText {...props} style={styles.root()} />
 }
 
 const stylesheet = createStyleSheet((theme) => ({
-  root: {
+  root: () => ({
     fontStyle: 'italic',
 
     variants: {
@@ -37,5 +37,5 @@ const stylesheet = createStyleSheet((theme) => ({
         },
       },
     },
-  },
+  }),
 }))
